@@ -1,0 +1,10 @@
+# Copy this file to .dev.vars and fill in real values for local testing.
+# .dev.vars is gitignored — never commit real tokens.
+#
+# Get BOT_TOKEN from @BotFather in Telegram.
+# Get CHAT_ID by sending any message to your bot, then visiting:
+#   https://api.telegram.org/bot<BOT_TOKEN>/getUpdates
+# Look for "chat":{"id":XXXXXXX} in the response.
+
+BOT_TOKEN=8851015854:AAElncWWCuVOhpHNi9wnLq5CxK4gm8JOqMY
+CHAT_ID=123456789

@@ -1,0 +1,18 @@
+# Cloudflare Pages _headers file
+# Hardens the API endpoint against cross-origin abuse.
+
+# Default security headers for all responses
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# CORS policy for the API endpoint — only same-origin POST is allowed.
+# (The function itself also does an Origin check; this is a defense-in-depth layer.)
+/api/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: POST, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+  Access-Control-Max-Age: 86400
+  Vary: Origin

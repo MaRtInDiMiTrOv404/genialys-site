@@ -1,0 +1,13 @@
+# Cloudflare Wrangler config for local development
+# Allows testing the Pages Function locally with env vars from .dev.vars
+#
+# Install wrangler:  npm install -g wrangler
+# Run locally:       wrangler pages dev . --compatibility-date=2024-01-01
+#
+# Create a .dev.vars file in this directory with:
+#   BOT_TOKEN=your_telegram_bot_token
+#   CHAT_ID=your_personal_chat_id
+
+name = "genialys-site"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "."
