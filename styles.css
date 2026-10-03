@@ -355,21 +355,16 @@ h1 em, h2 em, h3 em {
     letter-spacing: 0.02em;
 }
 
-.logo-mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-deep));
-    color: #fff;
-    font-family: var(--font-display);
-    font-size: 1.4rem;
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
     font-weight: 700;
     font-style: italic;
-    box-shadow: var(--shadow-glow);
-    position: relative;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #e8b4a0, #d18b7a, #b76e5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo-mark::after {
